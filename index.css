@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 60px;
+    line-height: 20px;
+    
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.Sedans,.suvs,.luxuary{
+    height: 370px;
+    width: 255px;
+    padding: 35px;
+}
+
+.Sedans{
+    background: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+
+.button{
+    height: 35px;
+    width: 110px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.button:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+
+.one{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%);
+}
+
+.two{
+    color: hsl(184, 100%, 22%);
+}
+
+.three{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxuary{
+    background: hsl(179, 100%, 13%);
+}
+
+
+
+@media (max-width:780px){
+    body{
+        flex-direction: column;
+    }
+    .Sedans{
+        border-radius: 8px 8px 0 0;
+        margin-top: 30px;
+    }
+    .luxuary{
+        border-radius:0 0 8px 8px;
+        margin-bottom: 30px;
+    }
+}
